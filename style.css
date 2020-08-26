@@ -14,7 +14,7 @@
     text-align: center;
     padding-top: 10vh;
     color: #fff;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .viewport{
@@ -64,6 +64,7 @@
     width: 100%;
     position: absolute;
     font-size: 30px;
+    font-weight: 600;
     -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility;
     color: rgb(100, 9, 9);
 }
@@ -192,9 +193,24 @@
     left: 120%;
 }
 
+@media(max-width: 1200px){
+    .love{
+        font-size: 50px;
+        padding-top: 20vh;
+    }
+
+    .face{
+        font-size: 20px;
+    }
+}
+
 @media(max-width: 600px){
     .love{
-        font-size: 40px;
-        padding-top: 20vh;
+        font-size: 30px;
+        padding-top: 30vh;
+    }
+
+    .face{
+        font-size: 15px;
     }
 }
