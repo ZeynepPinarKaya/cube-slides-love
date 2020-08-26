@@ -10,6 +10,13 @@
     background-size: cover;
 }
 
+.love{
+    text-align: center;
+    padding-top: 10vh;
+    color: #fff;
+    font-size: 50px;
+}
+
 .viewport{
     width: 42vw;
     height: 21vw;
@@ -37,11 +44,19 @@
     height: 33.333333%;
     transform-style:preserve-3d;
     position: relative;
-    transform: rotateY(270deg);
+}
+
+.cube-1{
+    transition: transform .4s;
 }
 
 .cube-2{
     z-index: 20;
+    transition: transform .4s .2s;
+}
+
+.cube-3{
+    transition: transform .4s .4s;
 }
 
 .face{
@@ -50,7 +65,7 @@
     position: absolute;
     font-size: 30px;
     -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility;
-    color: #fff;
+    color: rgb(100, 9, 9);
 }
 
 .front{
@@ -158,6 +173,10 @@
     background: rgba(42, 38, 56, .8);
 }
 
+.control i{
+    pointer-events: none;
+}
+
 .left-arrow{
     top: 50%;
     left: -35%;
@@ -171,4 +190,11 @@
 .play-pause{
     top: 140%;
     left: 120%;
+}
+
+@media(max-width: 600px){
+    .love{
+        font-size: 40px;
+        padding-top: 20vh;
+    }
 }
