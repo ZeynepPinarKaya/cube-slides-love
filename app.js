@@ -9,7 +9,7 @@ const rotate = () => {
 const changePlayPause = () =>{
     const i= document.querySelector('.play-pause i');
     const cls = i.classList;
-    if(cls === 'fa-play'){
+    if(cls == 'fas fa-play'){
         i.classList.remove('fa-play');
         i.classList.add('fa-pause');
     }
